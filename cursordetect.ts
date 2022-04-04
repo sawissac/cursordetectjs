@@ -29,7 +29,7 @@ export class CursorDetect implements CursorDetectionInterface {
       true
     );
   }
-  public start(callback: (options: { cursorX: number; cursorY: number; }) => void): void {
+  public start(callback?: (options: { cursorX: number; cursorY: number; }) => void): void {
     this.cursorMoveMothod = (e: MouseEvent) => {
       this.cursorPos.x = e.offsetX;
       this.cursorPos.y = e.offsetY;
