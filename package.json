@@ -1,0 +1,20 @@
+{
+  "name": "cursordetectjs",
+  "version": "1.0.0",
+  "description": "Simple library for detecting cursor position",
+  "main": "index.js",
+  "scripts": {
+      "tsc:cd": "tsc --target es6 --noEmitOnError --removeComments ./cursordetect.ts" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sawissac/cursordetectjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sawissac/cursordetectjs/issues"
+  },
+  "homepage": "https://github.com/sawissac/cursordetectjs#readme"
+}
