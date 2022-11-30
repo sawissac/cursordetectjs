@@ -1,20 +1,33 @@
 {
-  "name": "cursordetectjs",
+  "name": "@waux/cursordetectjs",
   "version": "1.0.0",
   "description": "Simple library for detecting cursor position",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "type": "module",
   "scripts": {
-      "tsc:cd": "tsc --target es6 --noEmitOnError --removeComments ./cursordetect.ts" 
+    "build": "tsc && rollup -c"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sawissac/cursordetectjs.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "javascript",
+    "js"
+  ],
+  "author": "Saw Issac",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sawissac/cursordetectjs/issues"
   },
-  "homepage": "https://github.com/sawissac/cursordetectjs#readme"
+  "homepage": "https://github.com/sawissac/cursordetectjs#readme",
+  "devDependencies": {
+    "rollup": "^3.5.0",
+    "rollup-plugin-dts": "^5.0.0",
+    "typescript": "^4.9.3"
+  }
 }

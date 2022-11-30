@@ -1,4 +1,4 @@
-export class CursorDetect {
+class CursorDetect {
     constructor(options) {
         this.cursorPos = {
             x: 0,
@@ -13,11 +13,11 @@ export class CursorDetect {
     getCursorY() {
         return this.cursorPos.y;
     }
-    close() {
-        this.container.removeEventListener("mousemove", this.cursorMoveMothod, true);
+    clear() {
+        this.container.removeEventListener("mousemove", this.cursorMoveMethod, true);
     }
     start(callback) {
-        this.cursorMoveMothod = (e) => {
+        this.cursorMoveMethod = (e) => {
             if (this.type === "outer") {
                 this.cursorPos.x = e.clientX;
                 this.cursorPos.y = e.clientY;
@@ -33,6 +33,8 @@ export class CursorDetect {
                 });
             }
         };
-        this.container.addEventListener("mousemove", this.cursorMoveMothod, true);
+        this.container.addEventListener("mousemove", this.cursorMoveMethod, true);
     }
 }
+
+export { CursorDetect };
