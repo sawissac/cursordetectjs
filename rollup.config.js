@@ -14,4 +14,12 @@ export default [
     },
     plugins: [dts()]
   },
+  {
+    input: 'dist/index.js',
+    output: {
+        file: 'index.umd.cjs.js',
+        name: "cursorDetect",
+        format: "umd"
+    },
+  },
 ]

@@ -2,11 +2,19 @@
   "name": "@waux/cursordetectjs",
   "version": "1.0.0",
   "description": "Simple library for detecting cursor position",
-  "main": "index.js",
+  "main": "index.umd.cjs.js",
+  "module": "index.js",
   "files": [
     "index.js",
-    "index.d.ts"
+    "index.d.ts",
+    "index.umd.cjs.js"
   ],
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.umd.cjs.js"
+    }
+  },
   "type": "module",
   "scripts": {
     "build": "tsc && rollup -c"
